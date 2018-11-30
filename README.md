@@ -1,2 +1,2 @@
-# madwill.github.io
-Mad Will WoW Cool
+# freakwill.github.io
+Freak Will WoW Cool
