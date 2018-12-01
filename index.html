@@ -18,15 +18,11 @@
   enumerateprint(a)
   set_title("Useless website")
 </script>
-<a href='http://www.baidu.com' id='mylink' onclick='pass();return false;' onmouseover='alert(do nothing)'>Searching Baidu</a>
+<a href='http://www.baidu.com' id='mylink' onclick='pass();return false;' onmouseover='alert(&#39;do nothing&#39;)'>Searching Baidu</a>
 <a href='next.html' onclick='doSomething();return false;'>Photo Wall</a>
 <br>
 Is she beautiful?
-<img alt='japanese actress' id='beauty' src='beauty.jpg' title='Beautiful Girl'>
-<script>
-  elm=document.getElementById("beauty")   //elm.onclick=function(){alert("The "+window.event.type+" event started this.")}
-  elm.attachEvent(onclick, function(){alert("The "+window.event.type+" event started this.")})
-</script>
+<img alt='japanese actress' id='beauty' onclick='alert(&#39;Come on, bro!&#39;)' src='beauty.jpg' title='Beautiful Girl'>
 <br>
 Following is just a large picture. (try to click it)
 <a href='http://www.baidu.com'></a>
