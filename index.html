@@ -10,17 +10,15 @@
 <script>
   showdate("the time is ")
   nl()
-<<<<<<< HEAD
   function f() {
-  var items = ['This is a useless website','This is a useful website'];
+  var items = ['This is a useless website', 
+  'This is a useful website',
+  'This is an awesome website'];
   print(choice(items));
   }
-=======
-  print('This is a useless website')
->>>>>>> b9119ba25e424301a7fb77404a757745d8cdd781
 </script>
-<button onclick='f();' type='button'>Click Me!</button>
-<a href='http://www.baidu.com' id='mylink' onclick='pass();' onmouseover='alert(&#39;do nothing&#39;)'>Searching Baidu</a>
+<button onclick='document.write(randomFromFile(&#39;quotes.json&#39;));'>Click Me!</button>
+<a href='http://www.baidu.com' id='mylink' onclick='pass();'>Searching Baidu</a>
 <a href='next.html' onclick='doSomething();return false;'>Photo Wall</a>
 <br>
 <p>
@@ -32,16 +30,13 @@
 <h1 id="section">问候</h1>
 
 <p>你好, <em>世界</em></p>
+
+<p>##</p>
 </p>
 <div>
 <input onkeydown='var x = &#39;Come on&#39;; var a=print(x);'>
-<button onclick='var x = &#39;Come on&#39;; var a=print(x);' type='button'>Click Me!</button>
+<button onclick='var x = &#39;Come on&#39;; var a=print(x);'>Click Me!</button>
 </div>
 <img alt='japanese actress' id='beauty' onclick='alert(&#39;Come on, bro!&#39;)' src='beauty.jpg' title='Beautiful Girl'>
-<<<<<<< HEAD
-=======
-<br>
-<a href='http://www.baidu.com'></a>
->>>>>>> b9119ba25e424301a7fb77404a757745d8cdd781
 </body>
 </html>
