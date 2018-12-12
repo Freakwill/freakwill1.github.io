@@ -1,6 +1,11 @@
 img:hover {
   -webkit-transform: rotate(20deg);
 }
+
+.show-quote {
+    float: right;
+}
+
 .text {
   background-image: url('./note.jpg');
   background-repeat: no-repeat;
