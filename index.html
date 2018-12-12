@@ -13,7 +13,8 @@
   showdate("the time is ")
   nl()
   function getQuote() {
-  document.getElementById("text").innerHTML=generateQuote();
+  document.getElementById("content").innerHTML=generateQuote()['content'];
+  document.getElementById("author").innerHTML=generateQuote()['author'];
   }
 </script>
 <br>
@@ -21,6 +22,14 @@
 <a href='next.html' onclick='doSomething();return false;'>Photo Wall</a>
 <div class='container'>
 <img class='img' src='math.jpg'>
+</div>
+<div>
+<button onclick='getQuote();'>Get a Quote</button>
+<button onclick='var x = &#39;^_^&#39;; document.getElementById(&#39;content&#39;).innerHTML=x; document.getElementById(&#39;author&#39;).innerHTML=x;'>Click Me!</button>
+</div>
+<div class='text'>
+<div id='content'></div>
+<div id='author'></div>
 </div>
 <br>
 <p>
@@ -41,12 +50,6 @@
 冥想，倾听自我</li>
 </ul>
 </p>
-<div>
-<button onclick='getQuote();'>Get a Quote</button>
-<button onclick='var x = &#39;^_^&#39;; document.getElementById(&#39;text&#39;).innerHTML=x;'>Click Me!</button>
-</div>
-<textarea id='text' style='margin: 0px; width: 260px; height: 105px;'></textarea>
-<br>
 友情链接
 <a href='http://www.brainyquote.com' id='mylink' onclick='pass();'>Brainyquote</a>
 </body>

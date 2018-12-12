@@ -62,5 +62,5 @@ function generateQuote(){
 }
 ];
     quote = choice(quotes);
-    return quote['content'] + ' --- ' + quote['author']
+    return quote
 }
