@@ -13,8 +13,9 @@
   showdate("the time is ")
   nl()
   function getQuote() {
-  document.getElementById("content").innerHTML=generateQuote()['content'];
-  document.getElementById("author").innerHTML=generateQuote()['author'];
+  quote = generateQuote();
+  document.getElementById("content").innerHTML = quote['content'];
+  document.getElementById("author").innerHTML = quote['author'];
   }
 </script>
 <br>
