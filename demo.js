@@ -1,10 +1,9 @@
-//document.write("<script src='basic.js' type='text/javascript'></script>");
 
 function getdate(str){
 	if (arguments.length==0)
-		{str=""}
-var date = new Date()      //e.g. 2012-12-20
-        return str + date.toString()
+		{str="";}
+    var date = new Date()      //e.g. 2012-12-20
+    return str + date.toString()
 }
 
 function showprop(obj){
