@@ -4,7 +4,17 @@ body { background-color: #eee; padding-top: 50px;
   background-color: rgb(204,232,207);
 }
 
-h2 { text-align: center;}
+@font-face {
+  font-family: 'aurora';
+  src: url('Aurora_script.ttf');
+}
+
+h2 {
+  font-family: aurora;
+  text-align: center;
+  font-size: 250%;
+  color: red;
+}
 
 .container { position: relative;
   width:1000px;
@@ -31,8 +41,9 @@ img:hover { transform: rotate(0deg);-moz-transform: rotate(0deg);-webkit-transfo
   z-index: 2;
 }
 
-.img1 { left:40px; top:20px; transform: rotate(20deg);-moz-transform: rotate(20deg);-webkit-transform: rotate(20deg);z-index: 1;}
-.img2 { left:156px; top:156px; transform: rotate(-20deg); -moz-transform: rotate(-20deg); -webkit-transform: rotate(-20deg); z-index: 1;}
+.img1 { left:20px; top:10px; transform: rotate(20deg);-moz-transform: rotate(20deg);-webkit-transform: rotate(20deg);z-index: 1;}
+.img2 { left:156px; top:140px; transform: rotate(-20deg); -moz-transform: rotate(-20deg); -webkit-transform: rotate(-20deg); z-index: 1;}
 .img3 { left:381px; top:60px; transform: rotate(20deg); -moz-transform: rotate(20deg); -webkit-transform: rotate(20deg); z-index: 1;}
 .img4 { left:458px; top:256px; transform: rotate(20deg); -moz-transform: rotate(20deg); -webkit-transform: rotate(20deg); z-index: 1;}
 .img5 { left:684px; top:110px; transform: rotate(-20deg); -moz-transform: rotate(-20deg); -webkit-transform: rotate(-20deg); z-index: 1;}
+.img6 { left:15px; top:300px; transform: rotate(-20deg); -moz-transform: rotate(-20deg); -webkit-transform: rotate(-20deg); z-index: 1;}

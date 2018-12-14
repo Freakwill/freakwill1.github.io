@@ -37,6 +37,7 @@ function generateQuote(){
 "author": "[德]尼采",
 "topic": "思想"
 },
+
 {
 "content": "除了很好地理解了东西之外，决不能强迫去记任何东西。",
 "author": "[捷]夸美纽斯",
@@ -84,7 +85,12 @@ function generateQuote(){
 {
 "content": "知识本身并没有告诉人怎样运用它，运用的方法乃在书本之外",
 "author": "[英]培根",
-"topic": "知识"}
+"topic": "知识"},
+
+{
+"content": "人必须更成熟些，才能够发现不加修饰的风光和紫云英的馨香的价值。如果这种香味沾染在他身上，也是不知不觉的，后一段时间，他的魅力才能渐渐发生作用。",
+"author": "[法]罗曼·罗兰",
+"topic": "品格"}
 ];
     quote = choice(quotes);
     return quote
