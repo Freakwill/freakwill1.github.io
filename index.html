@@ -11,9 +11,18 @@
 <body>
 <script>
   function getQuote() {
-    quote = generateQuote();
-    document.getElementById("content").innerHTML = quote['content'];
-    document.getElementById("author").innerHTML = quote['author'];
+    showQuote(generateQuote());
+  }
+  
+  function showQuote(quote) {
+    if (typeof quote === 'string') {
+      document.getElementById("content").innerHTML = quote;
+      document.getElementById("author").innerHTML = 'unknown';
+    }
+    else{
+      document.getElementById("content").innerHTML = quote['content'];
+      document.getElementById("author").innerHTML = quote['author'];
+    }
   }
 </script>
 <div class='header'>
@@ -23,19 +32,19 @@
 </script>
 </div>
 </div>
-<div class='container'>
-<img class='img' src='math.jpg'>
-</div>
 <div class='show-quote'>
 <div></div>
 <button onclick='getQuote();'>🎲一句名言</button>
-<button onclick='var x = &#39;^_^&#39;; document.getElementById(&#39;content&#39;).innerHTML=x; document.getElementById(&#39;author&#39;).innerHTML=x;'>🙂Click Me</button>
+<button onclick='showQuote(&#39;blahblahblah...&#39;);'>🙂Click Me</button>
 <div class='text'>
 <div id='content'></div>
 <div id='author'></div>
 </div>
-<textarea rows='4'>写下你的格言</textarea>
-<button disabled='disabled' onclick='getQuote();'>保存</button>
+<textarea id='yours' onclick='document.getElementById(&#39;confirm&#39;).disabled=false;' placeholder='写下你的格言' rows='4'></textarea>
+<button disabled='disabled' id='confirm' onclick='showQuote(document.getElementById(&#39;yours&#39;).value);'>确定</button>
+</div>
+<div class='container'>
+<img class='img' src='math.jpg'>
 </div>
 <div id='html-files'>
 作品展示

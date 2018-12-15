@@ -1,4 +1,12 @@
+/**
+ * Demonstration
+ */
 
+/**
+ * get the date
+ * @param  {String} str words befor date
+ * @return {String}
+ */
 function getdate(str){
 	if (arguments.length==0)
 		{str="";}
@@ -13,10 +21,11 @@ function showprop(obj){
 	//document.close()
 }
 
-/* to show Matrix
- * @param  {canvas}
- * @param  {int}
- * @param  {int}
+/**
+ * to show Matrix
+ * @param  {canvas} q
+ * @param  {int} width
+ * @param  {int} height
  * @return {nil}
  */
 function showMatrix(q, width, height){

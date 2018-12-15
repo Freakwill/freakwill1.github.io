@@ -23,7 +23,8 @@ img:hover {
 }
 
 .text #content {
-  color: blue
+  color: blue;
+  text-decoration: underline;
 }
 
 .text #author {

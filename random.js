@@ -83,7 +83,7 @@ function generateQuote(){
 "topic": "知识"},
 
 {
-"content": "知识本身并没有告诉人怎样运用它，运用的方法乃在书本之外",
+"content": "知识本身并没有告诉人怎样运用它，运用的方法乃在书本之外。",
 "author": "[英]培根",
 "topic": "知识"},
 
