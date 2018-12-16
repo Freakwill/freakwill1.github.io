@@ -6,10 +6,27 @@
 <script src='random.js' type='text/javascript'></script>
 <script src='quotes.json' type='text/javascript'></script>
 <link href='index.css' rel='stylesheet' type='text/css'>
+<link href='matrix.css' rel='stylesheet' type='text/css'>
 <link href='https://assets-cdn.github.com/favicon.ico' rel='shortcut icon' type='image/x-icon'>
 </head>
 <body>
+<body></body>
+<canvas id='c'></canvas>
 <script>
+  var show;
+  function surprise() {
+    if (document.getElementById("surprise").innerHTML === "😻Surprise"){
+      var c=document.getElementById('c'), s=window.screen, w=c.width, h=c.height;
+      show = showMatrix(c, s.width, s.height);
+      document.getElementById('surprise').innerHTML='😲Stop';}
+    else {
+      clearInterval(show);
+      document.getElementById('surprise').innerHTML='😻Surprise';
+      c=document.getElementById("c");
+      c.getContext("2d").clearRect(0,0,c.width,c.height);
+    }
+  }
+  
   function getQuote() {
     showQuote(generateQuote());
   }
@@ -40,7 +57,7 @@
 <div id='content'></div>
 <div id='author'></div>
 </div>
-<textarea id='yours' onclick='document.getElementById(&#39;confirm&#39;).disabled=false;' placeholder='写下你的格言' rows='4'></textarea>
+<textarea id='yours' onchange='document.getElementById(&#39;confirm&#39;).disabled=false;' placeholder='写下你的格言' rows='5'></textarea>
 <button disabled='disabled' id='confirm' onclick='showQuote(document.getElementById(&#39;yours&#39;).value);'>确定</button>
 </div>
 <div class='container'>
@@ -49,7 +66,7 @@
 <div id='html-files'>
 作品展示
 <a href='photowall.html'>Photo Wall</a>
-<a href='matrix.html'>Matrix</a>
+<button id='surprise' onclick='surprise();'>😻Surprise</button>
 </div>
 <br>
 <p>
