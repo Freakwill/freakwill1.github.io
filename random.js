@@ -32,6 +32,7 @@ function randomFromFile(path) {
     return choice(JSON.parse(data));
 }
 
+console.log(randomFromFile('quotes.json'))
 
 function generateQuote(){
     var quotes = [{
