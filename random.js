@@ -32,7 +32,6 @@ function randomFromFile(path) {
     return choice(JSON.parse(data));
 }
 
-console.log(randomFromFile('quotes.json'))
 
 function generateQuote(){
     var quotes = [{
@@ -57,12 +56,6 @@ function generateQuote(){
 "content": "哪里没有兴趣，哪里就没有记忆。",
 "author": "[德]歌德",
 "topic": "学习"
-},
-
-{
-"content": "最热烈的恋人也会保留一块私人领地————他的爱不会如此强烈或轻浮，以致不存在将某种不利于爱人的判断泄露出去的危险。",
-"author": "[美]梭罗",
-"topic": "爱情"
 },
 
 {
@@ -93,7 +86,12 @@ function generateQuote(){
 {
 "content": "信心是：抱着足可确信的希望与信赖，奔赴伟大荣誉之路的感情。",
 "author": "[古罗马]西塞罗",
-"topic": "感情"},
+"topic": "情感"},
+
+{
+"content": "好感是友谊的先决条件，但是不能把两者混为一谈。",
+"author": "[古希腊]亚里士多德",
+"topic": "友情"},
 
 {
 "content": "一个青年男子恋爱的第一个征象是柔顺，而一个女子却是勇敢。",
@@ -113,7 +111,12 @@ function generateQuote(){
 {
 "content": "乐观主义的谎言有着如此巨大的治疗价值，不能令人信服地说出这类谎言的医生是选错了职业。",
 "author": "[英]萧伯纳",
-"topic": "健康"}
+"topic": "健康"},
+
+{
+"content": "衡量人的真正品德，是看他在知道没有人会发觉的时候做些什么。",
+"author": "[法]孟德斯鸠",
+"topic": "品格"}
 ];
     quote = choice(quotes);
     return quote
