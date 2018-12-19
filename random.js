@@ -4,7 +4,16 @@ module.exports = {
   }
 
 function choice(items) {
-    return items[Math.floor(Math.random() * items.length)];}
+    return items[Math.floor(Math.random() * items.length)];
+}
+
+/* Example:
+var items = ['This is a useless website', 
+'This is a useful website',
+'This is an awesome website'];
+choice(items);
+*/
+
 
 function choicex(arr, count) {
     var shuffled = arr.slice(0), i = arr.length, min = i - count, temp, index;
@@ -23,13 +32,6 @@ function randomFromFile(path) {
     return choice(JSON.parse(data));
 }
 
-
-function test() {
-var items = ['This is a useless website', 
-'This is a useful website',
-'This is an awesome website'];
-return choice(items);
-}
 
 function generateQuote(){
     var quotes = [{
@@ -57,9 +59,9 @@ function generateQuote(){
 },
 
 {
-"content": "最富吸引力的格言也许并不是最机智的，而是最真实的，最合理的。",
+"content": "最热烈的恋人也会保留一块私人领地————他的爱不会如此强烈或轻浮，以致不存在将某种不利于爱人的判断泄露出去的危险。",
 "author": "[美]梭罗",
-"topic": "思想"
+"topic": "爱情"
 },
 
 {
@@ -85,6 +87,36 @@ function generateQuote(){
 {
 "content": "人必须更成熟些，才能够发现不加修饰的风光和紫云英的馨香的价值。如果这种香味沾染在他身上，也是不知不觉的，后一段时间，他的魅力才能渐渐发生作用。",
 "author": "[法]罗曼·罗兰",
+"topic": "品格"},
+
+{
+"content": "如果丑陋的人偏想要别人称赞他美，拨叫的人偏要表现矫健，那么这种原来引起我们同情的不幸情况只会引起我们讪笑了。",
+"author": "[英]菲尔丁",
+"topic": "品格"},
+
+{
+"content": "在爱情中永远没有精神的安宁：因为一方已经占据的优势不过是进一步欲望的新起点。",
+"author": "[法]普鲁斯特",
+"topic": "爱情"},
+
+{
+"content": "信心是：抱着足可确信的希望与信赖，奔赴伟大荣誉之路的感情。",
+"author": "[古罗马]西塞罗",
+"topic": "感情"},
+
+{
+"content": "一个青年男子恋爱的第一个征象是柔顺，而一个女子却是勇敢。",
+"author": "[法]雨果",
+"topic": "爱情"},
+
+{
+"content": "人类对于琐碎事物的敏感和对于最重要事物的麻木，标志着一种不可思议的错乱。",
+"author": "[法]帕斯卡",
+"topic": "生命"},
+
+{
+"content": "当一个人悲观地看待自己的弱点时，他就会以为所有人都在藐视他。其实，当时并没有任何人对他怀有一丝轻蔑",
+"author": "[荷]斯宾若莎",
 "topic": "品格"}
 ];
     quote = choice(quotes);
