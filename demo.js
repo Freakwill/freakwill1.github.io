@@ -18,8 +18,8 @@ function showprop(obj){
 	for (var prop in obj) {
 		print(prop+": "+ obj[prop])
 	}
-	//document.close()
 }
+
 
 /**
  * to show Matrix
