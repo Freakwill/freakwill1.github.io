@@ -43,34 +43,37 @@
       document.getElementById("author").innerHTML = quote['author'];
     }
   }
-  const value = new Array(
-              "富强", "民主", "文明", "和谐",
-              "自由", "平等", "公正", "法治",
-              "爱国", "敬业", "诚信", "友善");
-  const colors = new Array(
-              "red", "blue", "yellow", "cyan",
-              "purple", "pink", "black", "green",
-              "orange", "magenta", "brown");
-  jQuery("body").click(function(e) {
-      
-      var $i = jQuery("<span/>").text(choice(value));
   
-      var x = e.pageX, y = e.pageY;
+  const value = ["富强", "民主", "文明", "和谐",
+  "自由", "平等", "公正", "法治",
+  "爱国", "敬业", "诚信", "友善"];
+  
+  const colors = ["red", "blue", "yellow", "cyan",
+  "purple", "pink", "black", "green",
+  "orange", "magenta", "brown"];
+  
+  var index = 0;
+  
+  jQuery("body").click(function(e) {
+      var $i = jQuery("<span/>").text(value[index]);
+      index = index + 1;
+      if (index >= 12) {index = index - 12;}
+  
       $i.css({
           "z-index": 144469,
-          "top": y - 20,
-          "left": x,
+          "top": e.pageY - 20,
+          "left": e.pageX,
           "position": "absolute",
           "font-weight": "bold",
           "color": choice(colors)
       });
       jQuery("body").append($i);
       $i.animate({
-          "top": y - 180,
+          "top": e.pageY - 180,
           "opacity": 0
       },
       1500,
-      $i.remove)
+      $i.remove);
   });
 </script>
 <div class='header'>
